@@ -1,0 +1,8 @@
+Index: frontend/.env
+===================================================================
+diff --git a/frontend/.env b/frontend/.env
+--- a/frontend/.env	
++++ b/frontend/.env	
+@@ -1,0 +1,1 @@
++RECT_APP_API_URL="http://localhost:3000"
+\ No newline at end of file
