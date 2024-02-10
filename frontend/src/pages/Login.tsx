@@ -1,59 +1,53 @@
-import React, { useState, ChangeEvent } from 'react';
-import {authService, loginUser, registerUser} from "../services/api-services/authService";
+import React, {useState} from 'react';
+import { loginUser } from "../services/api-services/authService";
 import Input from "../form/Input";
 import Button from "../form/Button";
-const Login: React.FC = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [passwordError, setPasswordError] = useState('');
-
-    const [usernameError, setUsernameError] = useState('');
-    const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const password = e.target.value;
-        setPassword(password);
-
-        if (!password) {
-            setPasswordError('Password is required');
-        }
-
+import { Link } from "react-router-dom";
+import useForm from '../hook/useForm';
+import { validateUsername, validatePassword } from '../validations/RegisterValidation';
+import { useNavigate } from "react-router-dom";
+import {useAuth} from "../context/AuthContext";
+const Login = () => {
+    const { login } = useAuth();
+    const { values, handleChange } = useForm({ username: '', password: '' });
+    const [errors, setErrors] = useState({ username: '', password: '' });
+    const navigate = useNavigate();
+    const validateForm = () => {
+        const usernameError = validateUsername(values.username);
+        const passwordError = validatePassword(values.password);
+        setErrors({ username: usernameError, password: passwordError });
+        return !usernameError && !passwordError;
     };
-    const handleUserNameChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const username = e.target.value;
-        setUsername(username);
 
-        if (!username) {
-            setUsernameError('Username is required');
-        }
+    const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        if (!validateForm()) return;
 
-    };
-    const handleLogin = async (event: React.FormEvent) => {
         try {
-            if (!username) {
-                setUsernameError('Username is required');
-                return false;
+            const response = await loginUser(values);
+            const token = response.access_token;
+            if (token) {
+                login(token);
+                navigate("/chat");
             }
-            if (!password) {
-                setPasswordError('Password is required');
-                return false;
-            }
-
-            event.preventDefault();
-                const response = await loginUser({ username, password });
-                const token = response.access_token;
-                if (token) {
-                    localStorage.setItem('token', token);
-                }
         } catch (error) {
             console.error('Login failed:', error);
         }
     };
 
     return (
-        <div>
-            <h2>Login</h2>
-            <Input type="text" value={username} onChange={handleUserNameChange} error={usernameError}/>
-            <Input type="password" value={username} onChange={handlePasswordChange} error={passwordError}/>
-            <Button variant="primary" onClick={handleLogin}>Login</Button>
+        <div className="flex justify-center items-center h-screen">
+            <div className="bg-gray-200 w-1/2 p-6">
+                <h2>Login</h2>
+                <form onSubmit={handleLogin}>
+                    <Input name="username" type="text" placeholder="username" value={values.username} onChange={handleChange} error={errors.username}/>
+                    <Input name="password" type="password"  placeholder="password" value={values.password} onChange={handleChange} error={errors.password}/>
+                    <div className="flex space-x-4 mt-4">
+                        <Button type="submit" variant="primary">Login</Button>
+                        <Link to="/register" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register</Link>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };
