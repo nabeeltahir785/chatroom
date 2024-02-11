@@ -17,4 +17,9 @@ export class UserRepository {
         return newUser.save();
     }
 
+
+    async findAllUsersExceptLoggedIn(userId: string): Promise<User[]> {
+        return this.userModel.find({ _id: { $ne: userId }}).exec();
+    }
+
 }

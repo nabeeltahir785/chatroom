@@ -20,4 +20,8 @@ export class UserService {
         return newUser;
     }
 
+    async findAllExcept(userId: string): Promise<User[]> {
+        return this.userRepository.findAllUsersExceptLoggedIn(userId);
+    }
+
 }

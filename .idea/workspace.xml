@@ -3,32 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="6dee119a-2542-42ed-be61-0dc920e5035f" name="Changes" comment="React Boilerplate setup.">
       <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/private/ChatWindow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/private/MessageInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/routeGuards/ProtectedRoute.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/routeGuards/PublicRoute.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/context/AuthContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/hook/useForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/routeHelpers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/validations/RegisterValidation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/user/user.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/hook/useSocket.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Users.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/api-services/userService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/local-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/jwt-auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/chat/chat.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/chat/chat.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/chat/chat.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/chat/chat.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/user/user.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ChatComponent.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/form/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/form/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/form/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/form/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/form/style/Button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/CreateRoom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/alert/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/private/ChatWindow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/private/ChatWindow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/private/MessageInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/private/MessageInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/routeGuards/ProtectedRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/routeGuards/ProtectedRoute.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/routeGuards/PublicRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/routeGuards/PublicRoute.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PrivateChat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PrivateChat.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/api-services/authService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api-services/authService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/types/InputField.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types/InputField.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/api-manager/apiManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api-manager/apiManager.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,20 +64,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/muhammadnabeelmehmood/Desktop/chatroom",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/muhammadnabeelmehmood/Desktop/chatroom/backend/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/muhammadnabeelmehmood/Desktop/chatroom&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/muhammadnabeelmehmood/Desktop/chatroom/backend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/services" />
@@ -140,6 +139,7 @@
     <MESSAGE value="Worked on frontend api manager." />
     <MESSAGE value="Have worked on Frontend Component." />
     <MESSAGE value="React Boilerplate setup." />
-    <option name="LAST_COMMIT_MESSAGE" value="React Boilerplate setup." />
+    <MESSAGE value="Have completed login, register, and authentication Guard." />
+    <option name="LAST_COMMIT_MESSAGE" value="Have completed login, register, and authentication Guard." />
   </component>
 </project>

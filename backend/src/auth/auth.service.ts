@@ -14,7 +14,6 @@ export class AuthService {
     async validateUser(username: string, pass: string): Promise<Omit<User, 'password'> | null> {
         const user = await this.userService.findOne(username);
         if (user) {
-            // Compare the hashed password with the one provided by the user
             const isMatch = await bcrypt.compare(pass, user.password);
             if (isMatch) {
                 const { password, ...result } = user.toObject();

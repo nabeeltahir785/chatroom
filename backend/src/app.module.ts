@@ -5,6 +5,7 @@ import {ChatModule} from "./chat/chat.module";
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { ConfigModule } from '@nestjs/config';
+import {ChatGateway} from "./chat/chat.gateway";
 
 @Module({
   imports: [

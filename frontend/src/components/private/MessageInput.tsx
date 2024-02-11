@@ -1,14 +1,27 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
+interface MessageInputProps {
+    onSendMessage: (message: string,toUserId:string) => void;
+}
 
-const MessageInput: React.FC = () => {
-    const [message, setMessage] = useState('');
-
+interface ChatParams {
+    [key: string]: string | undefined;
+    toUserId: string;
+}
+const MessageInput: React.FC<MessageInputProps> = ({ onSendMessage }) => {
+    const [message, setMessage] = useState<string>('');
+    const { toUserId } = useParams<ChatParams>();
+    const sendMessage = () => {
+        if (message.trim() && toUserId) {
+            onSendMessage(message, toUserId);
+        }
+        setMessage('');
+    };
     const handleMessageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setMessage(e.target.value);
     };
 
-    const sendMessage = () => {
-    };
+
 
     return (
         <div className="flex justify-between p-2 bg-gray-100">
