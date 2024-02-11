@@ -13,7 +13,7 @@ import {AuthModule} from "../auth/auth.module";
             { name: 'Room', schema: RoomSchema },
             { name: 'Message', schema: MessageSchema },
         ]),
-],
+    ],
     providers: [RoomsService, ChatGateway,ChatService, JwtService],
     exports: [RoomsService, MongooseModule]
 })

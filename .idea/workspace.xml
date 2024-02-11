@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dee119a-2542-42ed-be61-0dc920e5035f" name="Changes" comment="React Boilerplate setup.">
+    <list default="true" id="6dee119a-2542-42ed-be61-0dc920e5035f" name="Changes" comment="Have worked on private chat module.">
       <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/user/user.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/hook/useSocket.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Users.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/api-services/userService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/auth/local-auth.guard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/auth/local-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/jwt-auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/jwt-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/jwt-auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/jwt.strategy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/local.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/local.strategy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/chat/chat.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/chat/chat.gateway.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/chat/chat.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/chat/chat.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/private/ChatWindow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/private/ChatWindow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/private/MessageInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/private/MessageInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/routeGuards/ProtectedRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/routeGuards/ProtectedRoute.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/routeGuards/PublicRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/routeGuards/PublicRoute.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/api-manager/apiManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api-manager/apiManager.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +28,8 @@
       <list>
         <option value="CSS File" />
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -118,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707596891062</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Have worked on private chat module.">
+      <created>1707663313215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707663313216</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +133,7 @@
     <MESSAGE value="Have worked on Frontend Component." />
     <MESSAGE value="React Boilerplate setup." />
     <MESSAGE value="Have completed login, register, and authentication Guard." />
-    <option name="LAST_COMMIT_MESSAGE" value="Have completed login, register, and authentication Guard." />
+    <MESSAGE value="Have worked on private chat module." />
+    <option name="LAST_COMMIT_MESSAGE" value="Have worked on private chat module." />
   </component>
 </project>
