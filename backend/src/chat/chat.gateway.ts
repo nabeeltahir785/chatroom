@@ -32,7 +32,6 @@ export class ChatGateway implements OnGatewayInit, OnGatewayConnection, OnGatewa
                 console.log('Invalid token, disconnecting client');
                 return;
             }
-            // Optionally, associate the user with the client socket for further use
             client.data.user = user;
             console.log(`Client connected with valid token: ${client.id}`);
         } catch (error) {
@@ -74,7 +73,7 @@ export class ChatGateway implements OnGatewayInit, OnGatewayConnection, OnGatewa
 
     private async validateToken(token: string): Promise<any> {
         try {
-            const decoded = this.jwtService.verify(token);
+            const decoded = this.jwtService.verify(token, {publicKey: "secretKey"});
             console.log(decoded)
             return decoded;
         } catch (error) {
