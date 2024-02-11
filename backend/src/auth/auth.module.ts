@@ -14,6 +14,22 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
   imports: [
     UserModule,
     PassportModule,
+      // JwtModule.register({
+      //   secret:"secretKey",
+      //   signOptions: { expiresIn: TOKEN_EXPIRE_TIME }
+      // })
+    // JwtModule.registerAsync({
+    //   imports: [ConfigModule],
+    //   useFactory: async (configService: ConfigService) => {
+    //     const secret = configService.get<string>('JWT_SECRET_KEY');
+    //     console.log('JWT Secret Key:', secret); // Debug: Check if secret is null/undefined
+    //     return {
+    //       secret,
+    //       signOptions: { expiresIn: '60s' }, // Adjust as necessary
+    //     };
+    //   },
+    //   inject: [ConfigService],
+    // }),
     JwtModule.registerAsync({
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({

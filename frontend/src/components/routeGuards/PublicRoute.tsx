@@ -1,12 +1,14 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 
 const PublicRoute = ({ children }: { children: JSX.Element }) => {
     const { isAuthenticated } = useAuth();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/users'; 
 
     if (isAuthenticated) {
-        return <Navigate to="/chat" replace />;
+        return <Navigate to={from} replace />;
     }
 
     return children;

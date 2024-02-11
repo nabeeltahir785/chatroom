@@ -28,7 +28,7 @@ const Login = () => {
             const token = response.access_token;
             if (token) {
                 login(token);
-                navigate("/chat");
+                navigate("/users");
             }
         } catch (error) {
             console.error('Login failed:', error);
